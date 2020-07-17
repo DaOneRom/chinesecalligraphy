@@ -1,0 +1,319 @@
+/* EDGE */
+@supports (-ms-ime-align:auto) {
+  @media (max-width:991px) {
+    .vid-cards, .vid-cards.bottom {
+        height: auto;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .vidcard {
+        width: 29%;
+        margin-right: 18px;
+    }
+  }
+  @media (max-width:425px) {
+    .vidcard {
+        width: 46%;
+        margin-right: 4%;
+    }
+    .vidcard h4 {
+        height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+  }
+}
+
+/* IE11 */
+*::-ms-backdrop, .img-container img{
+  height: auto;
+}
+*::-ms-backdrop, .menu .navbar-default {
+    position: absolute;
+    width: 100%;
+}
+*::-ms-backdrop, .fullSlide {
+  overflow: hidden!important;
+}
+@media (max-width:1199px) {
+  *::-ms-backdrop, .slider .left-container {
+    width: 50%;
+    margin-bottom: 20px;
+    height: 300px;
+    margin-right: 3%;
+  }
+  *::-ms-backdrop, .list-container .left-container .big-cards .txt-container span.date,
+  *::-ms-backdrop, .list-container .left-container .big-cards .txt-container span.author,
+  *::-ms-backdrop, .list-container .left-container .big-cards .txt-container span.views {
+      margin-right: 20px;
+  }
+  *::-ms-backdrop, .subinfo-container span.date, .subinfo-container span.date,
+  *::-ms-backdrop, .subinfo-container span.date, .subinfo-container span.author,
+  *::-ms-backdrop, .subinfo-container span.date, .subinfo-container span.views {
+      margin-right: 10px;
+  }
+
+}
+@media (max-width:991px) {
+  *::-ms-backdrop, .slider .left-container {
+      height: 232px;
+  }
+  *::-ms-backdrop, .vid-cards, *::-ms-backdrop, .vid-cards.bottom {
+      height: auto;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: auto;
+  }
+  *::-ms-backdrop, .vidcard {
+      width: 29%;
+      margin-right: 19px;
+  }
+  *::-ms-backdrop, .subvidecontent {
+      margin-top: 50px;
+  }
+}
+@media (max-width:767px) {
+  /* *::-ms-backdrop, .vidcard {
+      width: 212px;
+  } */
+}
+@media (max-width:425px) {
+  *::-ms-backdrop, .slider .left-container {
+      height: 234px;
+      width: 100%;
+  }
+  *::-ms-backdrop, .vidcard {
+      width: 46%;
+      margin-right: 4%;
+  }
+  *::-ms-backdrop, .vidcard h4 {
+      width: 100%;
+      height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 14px;
+  }
+}
+@media (max-width:375px) {
+  *::-ms-backdrop, .article .left-container .subinfo-container {
+      margin-bottom: 35px;
+  }
+}
+@media (max-width:320px) {
+  *::-ms-backdrop, .slider .left-container{
+      height: 160px;
+  }
+}
+
+/* IE10 */
+.ie10 .img-container img{
+  height: auto;
+}
+.ie10 .fullSlide {
+  overflow: hidden!important;
+}
+.ie10 .fullSlide .bd ul li span::before {
+  background-color: rgba(0,0,0,0.5);
+}
+.ie10 .menu .navbar-default {
+    position: absolute;
+    width: 100%;
+}
+@media (max-width:1199px) {
+  .ie10 .slider .left-container {
+    width: 50%;
+    margin-bottom: 20px;
+    height: 300px;
+    margin-right: 3%;
+  }
+  .ie10 .list-container .left-container .big-cards .txt-container span.date,
+  .ie10 .list-container .left-container .big-cards .txt-container span.author,
+  .ie10 .list-container .left-container .big-cards .txt-container span.views {
+      margin-right: 20px;
+  }
+  .ie10 .subinfo-container span.date, .subinfo-container span.date,
+  .ie10 .subinfo-container span.date, .subinfo-container span.author,
+  .ie10 .subinfo-container span.date, .subinfo-container span.views {
+      margin-right: 10px;
+  }
+}
+@media (max-width:991px) {
+  .ie10 .slider .left-container {
+      height: 232px;
+  }
+  .ie10 .vid-cards {
+      height: auto!important;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+  }
+  .ie10 .subvidecontent {
+      margin-top: 50px;
+  }
+  /* .ie10 .vid-cards {
+      height: 233px!important;
+      width: 100%;
+      overflow-x: auto;
+      overflow-y: scroll;
+  } */
+}
+@media (max-width:767px) {
+  .ie10 .vidcard {
+      width: 29%;
+  }
+}
+@media (max-width:425px) {
+  .ie10 .slider .left-container {
+    height: 234px;
+    width: 100%;
+  }
+  .ie10 .vidcard {
+      width: 46%;
+      margin-right: 4%;
+  }
+  .ie10 .vidcard h4 {
+      width: 100%;
+      height: 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 14px;
+  }
+  .ie10 .article .left-container .subinfo-container span {
+      display: inline;
+  }
+}
+@media (max-width:375px) {
+  .ie10 .article .left-container .subinfo-container {
+      margin-bottom: 35px;
+  }
+}
+@media (max-width:320px) {
+  .ie10 .slider .left-container{
+      height: 160px;
+  }
+}
+
+/* IE9 */
+.slider .left-container .fullSlide .bd ul li span::before,
+#slide-content .left-container .fullSlide .bd ul li span::before
+{
+  background-color: rgba(0,0,0,0.5);
+}
+.slider .left-container .fullSlide .bd ul li span::before {
+    background-color: rgba(0,0,0,0.5);
+}
+.menu .navbar-default {
+    position: absolute\9;
+    width: 100%\9;
+}
+.img-container img{
+  height: auto\9;
+}
+.fullSlide {
+  overflow: hidden\9!important;
+}
+.fontdownload .downloadcontainer img.downarrow {
+    top: 23%\9;
+    opacity: 1\9;
+    left: 33%\9;
+    cursor: pointer\9;
+}
+.fontdownload .downloadcontainer img.downplatform {
+    cursor: pointer\9;
+}
+.panel {
+    max-height: 100%\9;
+}
+button.accordion {
+    display: none\9;
+}
+@media (max-width:1199px) {
+  .slider .left-container {
+      width: 50%\9;
+      margin-bottom: 20px\9;
+      height: 300px\9;
+      margin-right: 3%\9;
+  }
+  .list-container .left-container .big-cards .txt-container span.date,
+  .list-container .left-container .big-cards .txt-container span.author,
+  .list-container .left-container .big-cards .txt-container span.views {
+      margin-right: 20px\9;
+  }
+  .subinfo-container span.date, .subinfo-container span.date,
+  .subinfo-container span.date, .subinfo-container span.author,
+  .subinfo-container span.date, .subinfo-container span.views {
+      margin-right: 10px\9;
+  }
+}
+@media (max-width:991px) {
+  .slider .left-container {
+      height: 232px\9;
+  }
+  .vid-cards {
+      height: auto\9!important;
+      width: 100%\9;
+      overflow-x: hidden\9;
+      overflow-y: hidden\9;
+  }
+  .subvidecontent {
+      margin-top: 50px\9;
+  }
+}
+@media (max-width:767px) {
+  .vidcard {
+      width: 29%\9;
+      margin-right: 19px\9;
+  }
+  .vidcard h4 {
+      width: 100%\9;
+      height: 26px\9;
+      overflow: hidden\9;
+      text-overflow: ellipsis\9;
+      white-space: nowrap\9;
+  }
+}
+
+@media (max-width:425px) {
+  .slider .left-container {
+    height: 234px\9;
+    width: 100%\9;
+  }
+  .vidcard {
+      width: 46%\9;
+      margin-right: 4%\9;
+  }
+  .vidcard h4 {
+      height: 20px\9;
+      font-size: 14px\9;
+  }
+  .subinfo-container span.date, .subinfo-container span.date,
+  .subinfo-container span.date, .subinfo-container span.author,
+  .subinfo-container span.date, .subinfo-container span.views {
+      width: 100%\9;
+      height: 20px\9;
+      overflow: hidden\9;
+      text-overflow: ellipsis\9;
+      white-space: nowrap\9;
+  }
+  .article .left-container .subinfo-container span {
+      display: inline\9;
+  }
+  .fontlist-download .right-container .link-buttons a {
+      width: 20.7%\9;
+  }
+
+}
+@media (max-width:375px) {
+  .article .left-container .subinfo-container {
+      margin-bottom: 35px\9;
+  }
+}
+@media (max-width:320px) {
+  .slider .left-container{
+      height: 160px\9;
+  }
+}
